@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <h2>Calculadora</h2>
+        <hr>
+        <form>
+            <input type="number" name="a" id="a">
+            <br>
+            <input type="number" name="b" id="b">
+            <div>
+                <button type="button" onclick="cambioOp('suma')">+</button>
+                <button type="button" onclick="cambioOp('resta')">-</button>
+                <button type="button" onclick="cambioOp('multiplicacion')">x</button>
+                <button type="button" onclick="cambioOp('division')">/</button>
+                <button type="button" onclick="igual()">=</button>
+            </div>
+            <p>
+                Resultado: <b id="resultado"></b>
+            </p>
+        </form>
+        <script src="calculadora.service.js"></script>
+        <script src="calculadora.js"></script>
+    </body>
+</html>

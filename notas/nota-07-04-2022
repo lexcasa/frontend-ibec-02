@@ -1,0 +1,92 @@
+FRONTEND
+
+    -> Mantenimiento de codigo
+    -> Arq. MVC
+    -> Vue - aplicamos en una app de operaciones CRUD
+        -> APP de tipo SPA
+            -> Single Page Application
+    
+    -> Patron de diseno: 
+        -> Factory
+
+    -> Arq. FrontEnd
+        -> MVC
+
+    Front: 
+
+        -> Navegador
+        -> Editor de codigo
+        -> Web Server
+
+
+    App: Calculadora: 
+
+        -> Operaciones elementales
+        -> Suma, Resta, Multiplicacion, Division
+
+        LOGICA: Funciones, variables, etc
+        VISTA: HTML
+        INTEGRACION: LOGICA + VISTA
+
+    /calculadora
+        -> index.html
+        -> calculadora.service.js
+
+    index.html: 
+        -> Plantear un HTML base
+
+
+    EJERCICIO RAPIDO #1: 
+
+        -> Crear la funcion sumatoria de un array
+            -> [1, 1, 1]
+            -> Resultado: 3
+
+        -> Crear la funcion sumatoria de dos arrays
+            -> [1, 1, 1]
+            -> [2, 1, 1]
+            -> Resultado: 7
+
+            Si los arrays son de distintos largos
+            Tiene que dar un error
+        
+    El objeto document es la abs del HTML dentro del JS
+
+        -> Manipular el HTML 
+            -> Escribir datos
+            -> Obtener datos
+        
+    Problema: Como obtengo los valores de los inputs de HTML
+
+        -> Cual es la funcion que obtiene el falor del input por Id?
+        -> Notacion de selectores
+
+            document.querySelector("#a") -> <input id="a" ...>
+            document.querySelector("#b") -> <input id="b" ...>
+
+
+    INPUTS:
+
+        Para escribir:      document.querySelector(...).value = valor
+        Para obtener datos: document.querySelector(...).value
+
+    ETIQUETAS HTML:
+
+        Para escribir:      document.querySelector(...).innerHTML = valor
+        Para obtener datos: document.querySelector(...).innerHTML
+
+    Referencias: 
+        - https://www.w3schools.com/js/js_htmldom_elements.asp
+
+    
+    LINEA DE TIEMPO DE JS
+
+        t=0 HTML/CSS
+        t=1 JS Parsea el HTML/CSS -> document (DOM)
+        t=2 JS define las variables y las funciones
+        t=3 JS ejecuta las funciones de tiempo de ejecucion
+
+        ...
+        // Cuando el usuario ejecuta una funcion
+        t=i (Indeterminado)
+            
