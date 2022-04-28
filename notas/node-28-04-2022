@@ -41,3 +41,6 @@
             ...
         }
     })
+
+    EJERCICIO RAPIDO: Crear una app de saludo que ingresamos en un input el nombre
+    le damos clic en un boton: "Saludar" - en pantalla (en una etiqueta p) aparece: Hola, [nombre]!
