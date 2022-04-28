@@ -1,0 +1,43 @@
+-> FW: VueJS v2, v3
+    -> Enfoque Web + CDN
+        -> Scripts externos para acceder a la fw
+        -> Referencia: https://v2.vuejs.org/v2/guide/#Getting-Started
+
+    -> Framework
+        -> Una libreria + metodologia de trabajo que permite producir software
+    
+
+    EJEMPLO: Calculadora con las operaciones Suma, Resta, Multiplicacion, Division con Vue
+
+    1. VISTA
+    2. LOGICA
+    3. INTEGRACION
+
+    Arq. Vue MVC - MVM - MVVM
+
+    SETUP: 
+        -> Incluir CDN VueJS
+        -> Setup de la aplicacion minima
+
+    VUE es de tipo data-binding
+    data-binding: invocar el valor de una variable de JS desde el HTML
+
+    -> La instancia de Vue se invoca en el app.js a traves de: const app = new Vue({...})
+    -> Una app de vue existe si existe la propiedad el: '#app' en la instancia y un div con esa ID
+    -> Todas las variables de la app tienen que estar definidas como propiedades del objeto data
+    
+
+    Est. basica de una instancia de Vue 
+
+    const app = new Vue({
+        el: '#app',
+        data: {
+            ...
+        },
+        methods: {
+            ...
+        },
+        mounted: function (){
+            ...
+        }
+    })
