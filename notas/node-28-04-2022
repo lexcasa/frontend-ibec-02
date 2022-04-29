@@ -42,5 +42,23 @@
         }
     })
 
-    EJERCICIO RAPIDO: Crear una app de saludo que ingresamos en un input el nombre
+    EJERCICIO RAPIDO #1: Crear una app de saludo que ingresamos en un input el nombre
     le damos clic en un boton: "Saludar" - en pantalla (en una etiqueta p) aparece: Hola, [nombre]!
+
+        1. VISTA + SETUP
+            -> input
+            -> button
+            -> p 
+        
+        2. LOGICA
+            -> Input: recibo un nombre
+            -> Output: Saludo + nombre
+        
+        3. INTEGRACION
+            -> Agregar el v-model
+            -> Agregar el @click de la funcion
+    
+    EJERCICIO RAPIDO #2: Al ejercicio anterior agregar: 
+        -> Un boton para limpiar el saludo -> "restablecer"
+        -> Una vez que damos clic en saludar que borre los datos del input
+    
