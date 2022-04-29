@@ -59,6 +59,40 @@
             -> Agregar el @click de la funcion
     
     EJERCICIO RAPIDO #2: Al ejercicio anterior agregar: 
+
         -> Un boton para limpiar el saludo -> "restablecer"
         -> Una vez que damos clic en saludar que borre los datos del input
     
+    EJERCICIO RAPIDO #3: Una app que al agregar la fecha de nacimiento que verifique si es mayor
+    de edad o no en funcion de una constante definida en el sistema
+
+        Req. Funcional: 
+
+            -> const MAYOR_EDAD = 19
+            -> Al dar clic en un boton despliega en pantalla si es mayor de edad o no
+        
+        Dificultad: 
+            -> La fecha tiene que estar en tres inputs: 
+                -> dia
+                -> mes
+                -> anio
+
+    EJERCICIO RAPIDO #4: Buscar una persona por su apellido y mostrar en pantalla el nombre y la edad
+
+        Req. Funcional: 
+        
+            -> Ingresamos el apellido en un input
+
+            const personas = [
+                {
+                    nombre: "alex",
+                    apellido: "casadevall",
+                    edad: 30
+                },
+                ...
+            ]
+
+            alex - 30
+
+    
+

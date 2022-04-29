@@ -8,6 +8,11 @@ const app = new Vue({
         obtengoSaludo: function (){
             const hola = "Hola, "
             this.saludo = hola + this.nombre
+            // En seguida del saludo
+            this.nombre = null
+        },
+        restablecer: function (){
+            this.saludo = null
         }
     }
 })
