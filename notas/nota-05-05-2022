@@ -1,0 +1,66 @@
+EJERCICIO RAPIDO #3: Una app que al agregar la fecha de nacimiento que verifique si es mayor
+    de edad o no en funcion de una constante definida en el sistema
+
+        Req. Funcional: 
+
+            -> const MAYOR_EDAD = 19
+            -> Al dar clic en un boton despliega en pantalla si es mayor de edad o no
+        
+        Dificultad: 
+            -> La fecha tiene que estar en tres inputs: 
+                -> dia
+                -> mes
+                -> anio
+
+EJERCICIO RAPIDO #4: Buscar una persona por su apellido y mostrar en pantalla el nombre y la edad
+
+    Req. Funcional: 
+    
+        -> Ingresamos el apellido en un input
+
+        const personas = [
+            {
+                nombre: "alex",
+                apellido: "casadevall",
+                edad: 30
+            },
+            ...
+        ]
+
+        alex - 30
+
+
+OBS: 
+
+    -> Creo una carpeta
+    -> Copio el HTML de un ejercio anterior
+        -> CDN de Vue
+        -> script del app.js
+    -> Dentro del archivo app.js
+        -> Setup de una app minima
+
+
+RESOLUCION. EJERCICIO RAPIDO #3: 
+
+    -> VISTA [x]
+        -> input de tipo date
+        -> boton 
+
+    -> LOGICA [x]
+        -> Agarro los datos de la fecha
+        -> Resto la fecha ingresada con la fecha de hoy
+            -> resto anios
+            -> resto los meses
+            -> resto los dias
+
+            Nacimiento: 29-12-1991
+            Hoy:        05-05-2022
+
+            -> 2022 - 1991 = 31
+            -> 05   - 12   -> Si es mayor o igual 0 tiene 31
+                           -> Si es menor a 0 entonces tiene 30
+            ----
+
+    -> INTEGRACION [x]
+        -> Agarrar la funcion anterior y poner en un boton
+        -> Agregar el v-model en el input
