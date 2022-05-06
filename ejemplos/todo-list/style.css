@@ -1,0 +1,5 @@
+@media all {
+    .completado {
+        text-decoration: line-through;
+    }
+}

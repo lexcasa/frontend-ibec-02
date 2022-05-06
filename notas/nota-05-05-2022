@@ -64,3 +64,17 @@ RESOLUCION. EJERCICIO RAPIDO #3:
     -> INTEGRACION [x]
         -> Agarrar la funcion anterior y poner en un boton
         -> Agregar el v-model en el input
+
+
+EJERCICIO RAPIDO #5: ToDo List
+
+    ACCIONES: 
+        
+        -> Agregar items a una lista
+        -> Completar un elemento
+        -> Eliminar un elemento
+        -> Editar un elemento
+
+    VISTA
+    LOGICA
+    INTEGRACION
