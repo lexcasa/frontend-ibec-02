@@ -68,14 +68,26 @@ Roadmap:
         se va sumando el subtotal
         -> Que exista una linea final para calcular el subtotal + impuestos (subtotal * 1.22)
 
-    #1 Manzana $ 12.00 [Eliminar]
-    #2 Pera    $ 30.00 [Eliminar]
-    -------
-    Subtotal   $ 32.00
-    Total      $ 32.00 * 1.22
+        #1 Manzana $ 12.00 [Eliminar]
+        #2 Pera    $ 30.00 [Eliminar]
+        -------
+        Subtotal   $ 32.00
+        Total      $ 32.00 * 1.22
 
-    Acciones: 
-        -> Agregar
-        -> Eliminar
-        -> Al cargar la app que se calcule el subtotal y total de la lista
-        existente
+        Acciones: 
+            -> Agregar
+            -> Eliminar
+            -> Al cargar la app que se calcule el subtotal y total de la lista
+            existente
+
+    -> VIEW
+        -> Agregar un input con el precio
+
+    -> LOGICA
+        -> Calculo de subtotal -> Sumatoria de los precios de la lista
+        -> Calculo del total: subtotal * 1.22
+    
+    -> INTEGRACION
+        -> guardarItem  -> API
+        -> eliminarItem -> API
+        -> Logica de calculo en el mounted
