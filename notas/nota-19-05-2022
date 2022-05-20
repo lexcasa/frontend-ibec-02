@@ -60,4 +60,22 @@ Roadmap:
         -> Verifico si esta cargado this._id auxiliar para 
         decidir si vamos a invocar el POST o el PUT
     
-    EJERCICIO RAPIDO #1: Crear el flujo de completar un elemento de la lista
+    EJERCICIO RAPIDO #1: Crear el flujo de completar un elemento de la lista (deberes)
+
+    EJERCICIO RAPIDO #2: 
+        -> Crear una lista de productos con el precio
+        -> Que a medida que se va agregando el producto con su precio
+        se va sumando el subtotal
+        -> Que exista una linea final para calcular el subtotal + impuestos (subtotal * 1.22)
+
+    #1 Manzana $ 12.00 [Eliminar]
+    #2 Pera    $ 30.00 [Eliminar]
+    -------
+    Subtotal   $ 32.00
+    Total      $ 32.00 * 1.22
+
+    Acciones: 
+        -> Agregar
+        -> Eliminar
+        -> Al cargar la app que se calcule el subtotal y total de la lista
+        existente
