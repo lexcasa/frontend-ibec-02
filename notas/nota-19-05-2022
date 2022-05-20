@@ -1,0 +1,63 @@
+Roadmap: 
+
+    -> ToDo List integrado contra una API Publica
+        -> Servicio crudcrud.com
+    
+    App VueJS ---> API
+
+    Como: Protocolo HTTP
+        -> HTTP Verbose
+            -> GET
+            -> POST
+            -> PUT
+            -> DELETE
+            ... 
+
+    Operaciones CRUD
+        -> CRUD: Create, Read, Update, Delete
+
+        API: Realizar las op. Crud
+        App: Utilizar las op. Crud
+
+            -> GET  : Read
+            -> POST : Create
+            -> PUT  : Update
+            -> DELETE : Delete
+
+        Req. HTTP ----> API
+    
+    EJEMPLO #1 TODO LIST: Crear un item en la API
+
+        FLOW: 
+            -> Escribo el item de la lista en el input
+            -> Clic en "Agregar"
+            -> El agregar dispara la funcion guardarItem
+                -> guardarItem 
+                    -> POST a la API con la informacion del item
+                    -> Viaja un Obj JSON {item: "Manzana"}
+                    -> API responde un resultado
+                    -> OK, Error
+            ----
+
+            Necesitamos una lib de HTTP dentro del JS
+            -> Lib: Axios
+        
+        Paso 0.
+            -> Necesitamos correr nuestra APP en Vue en un HTTP Server
+            -> (si tenemos nodejs instalado) npm i -g http-server
+            -> http-server -p 8080 -c-1 
+    
+    EJEMPLO #2 TODO LIST: Obtener los elementos de la lista
+        -> Cuando cargo la ToDo list [x]
+        -> Cuando creo un item nuevo [x]
+
+    EJEMPLO #3 TODO LIST: Eliminar un elemento de la lista
+        -> Elimino el elemento de la lista [x]
+        -> Actualizo la lista [x]
+
+    EJEMPLO #4 TODO LIST: Editar un elemento de la lista
+        -> Utilizo el this._id auxiliar
+        -> Verifico si esta cargado this._id auxiliar para 
+        decidir si vamos a invocar el POST o el PUT
+    
+    EJERCICIO RAPIDO #1: Crear el flujo de completar un elemento de la lista
