@@ -14,11 +14,13 @@
         <input type="text" v-model="persona.apellido" placeholder="Apellido">
         <input type="number" v-model="persona.edad">
         <button @click="guardarItem()">Agregar</button>
+        <button @click="restablecer()">Restablecer</button>
         <hr>
         <ul>
             <li v-for="(itm, index) in items" :key="index">
                 <span>#{{index}} {{itm.nombre}} {{itm.apellido}} {{itm.edad}}</span>
                 <button @click="eliminarItem(itm._id)">Eliminar</button>
+                <button @click="editarItem(itm)">Editar</button>
             </li>
         </ul>
     </div>
