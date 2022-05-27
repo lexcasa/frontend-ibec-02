@@ -1,0 +1,8 @@
+CR PRODUCTOS
+
+    -> Crear y listar productos
+    -> producto: { nombre, precio }
+    -> Service que abs el axios
+    -> Crear un componente reutilizable
+
+    

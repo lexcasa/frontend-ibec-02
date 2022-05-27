@@ -7,28 +7,21 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
-    <style>
-        @media all {
-            .completado {
-                text-decoration: line-through;
-            }
-        }
-    </style>
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="item">
+        <input type="text" v-model="item" placeholder="Nombre del producto">
+        <input type="number" v-model="precio">
         <button @click="guardarItem()">Agregar</button>
         <hr>
         <ul>
             <li v-for="(itm, index) in items" :key="index">
-                <span v-bind:class="itm.completar ? 'completado' : ''">#{{index}} {{itm.item}}</span>
-                <button @click="completarItem(index, itm._id)" v-bind:disabled="itm.completar">Completar</button>
-                <button @click="editarItem(itm)">Editar</button>
+                <span>#{{index}} {{itm.item}} $ {{itm.precio}}</span>
                 <button @click="eliminarItem(itm._id)">Eliminar</button>
             </li>
         </ul>
     </div>
+    <script src="productos.service.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
