@@ -6,3 +6,5 @@ CR PRODUCTOS
     -> Crear un componente reutilizable
 
     EJERCICIO RAPIDO #1: En el crud de productos o persona agregar el editar
+    EJERCICIO RAPIDO #2: Agregar el crud de Personas en otra app de Vue como
+    un componente reutilizable.
