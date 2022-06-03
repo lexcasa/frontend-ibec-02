@@ -13,6 +13,18 @@ const Menu = Vue.component('menu-component', {
                 {
                     name: "Crud Productos",
                     app: 2
+                },
+                {
+                    name: "Buscar personas",
+                    app: 3
+                },
+                {
+                    name: "Mayor Edad",
+                    app: 4
+                },
+                {
+                    name: "ToDo List Almacen",
+                    app: 5
                 }
             ]
         }

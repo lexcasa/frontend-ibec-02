@@ -26,12 +26,12 @@ CLASE QUE VIENE:
         de vue
 
     EJERCICIO RAPIDO #1: 
-    
+
         -> Implementar los componentes: 
             -> Crud Personas
-            -> Mayor edad
-            -> ToDo list almacen
-            -> Buscar persona
+            -> Mayor edad [x]
+            -> ToDo list almacen [x]
+            -> Buscar persona [x]
 
         Todo en el marketplace
         
