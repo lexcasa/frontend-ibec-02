@@ -1,0 +1,26 @@
+HOY:
+    -> Componentes Reutilizables
+        -> Conceptos / Implementacion
+        -> Ejercicios
+
+CLASE QUE VIENE: 
+    -> App Vue SPA
+        -> Ruteo y estados
+        -> Ejercicios
+
+
+-> Componentes Reutilizables
+
+    EJEMPLO: Marketplace
+        -> Es un sitio que tiene muchas apps
+            -> cargar dentro del sitio
+            -> O redireccionar a la pagina de la app
+        
+        Marketplace (apps): 
+            -> calculadora
+            -> todo-list
+            -> crud-productos
+            -> etc
+
+        Todas las apps en vue transformar en un archivo que va ser un comp.
+        de vue

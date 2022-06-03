@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Marketplace // Componentes</title>
+</head>
+<body>
+    <div id="app">
+        <div class="menu">
+            <!-- Aca va el componente de menu -->
+            <menu-component></menu-component>
+        </div>
+        <div class="appComponente">
+            <calculadora-component v-if="appNumber === 0"></calculadora-component>
+            <todolist-component v-if="appNumber === 1"></todolist-component>
+            <crud-productos-component v-if="appNumber === 2"></crud-productos-component>
+        </div>
+    </div>
+    <!-- Componentes -->
+    <script src="components/menu.component.js"></script>
+    <script src="components/calculadora.component.js"></script>
+    <script src="components/todolist.component.js"></script>
+    <script src="components/crud.productos.component.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
