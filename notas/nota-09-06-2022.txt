@@ -1,0 +1,17 @@
+REPASO Y EJERCICIOS CRUDs:
+
+EJERCICIOS RAPIDO #1: 
+    -> Crear un CRUD para los siguientes modelos de una tienda (panel de administracion)
+        -> productos
+            -> {nombre, categoria, codigo}
+                -> Donde codigo sea autogenerado desde el frontEnd
+        -> usuarios
+            -> {nombre, tipo ['final','empresa'], documento}
+        -> compras
+            -> {producto, usuario, cantidad, precio}
+                -> Totalizar todas las compras realizadas en una tabla
+
+    -> Generar componentes estaticos y reutilizables agregandolos en una web
+       de la tienda
+       
+-----
