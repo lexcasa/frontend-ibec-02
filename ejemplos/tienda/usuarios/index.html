@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="usuarios--listado">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(usuario, i) in usuarios" :key="i">
+                        <td>{{usuario._id}}</td>
+                        <td>{{usuario.nombre}}</td>
+                        <td>{{usuario.tipo}}</td>
+                        <td>
+                            <button @click="editar(usuario)">Editar</button>
+                            <button @click="eliminar(usuario._id)">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div id="usuarios--form">
+            <form action="">
+                <input type="text" placeholder="Nombre" v-model="form.nombre">
+                <br>
+                <select name="" v-model="form.tipo">
+                    <option value="final">Final</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+                <br>
+                <input type="text" placeholder="Documento" v-model="form.documento">
+                <br>
+                
+                <br>
+                <button type="button" @click="guardar()">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <script src="usuarios.service.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
