@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="compras--listado">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(compra, i) in compras" :key="i">
+                        <td>{{compra._id}}</td>
+                        <td>{{compra.producto}}</td>
+                        <td>{{compra.cantidad}}</td>
+                        <td>{{compra.precio}}</td>
+                        <td>
+                            <button @click="editar(compra)">Editar</button>
+                            <button @click="eliminar(compra._id)">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total: </td>
+                        <td>{{total}}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <hr>
+        <div id="compras--form">
+            <form action="">
+                <input type="text" placeholder="Producto" v-model="form.producto">
+                <br>
+                <input type="text" placeholder="Usuario" v-model="form.usuario">
+                <br>
+                <input type="number" placeholder="Cantidad" v-model="form.cantidad">
+                <br>
+                <input type="number" placeholder="Precio" v-model="form.precio">
+                <br>
+                <button type="button" @click="guardar()">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <script src="compras.service.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
