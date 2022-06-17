@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.5.4/vue-router.js" integrity="sha512-sKe157HhBiCqOCnhlr0hwOi12s27R+eCZTuYtvYOQWrPugnXEbJPQppm79oTI5ol+GGWjGLkoTmeMzE4uAKvxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{mensaje}}</h1>
+        <router-link to="/">Home</router-link>
+        <router-link to="/compras">Compras</router-link>
+        <router-link to="/productos">Productos</router-link>
+        <router-view></router-view>
+    </div>
+    <!-- Servicios -->
+    <script src="services/compras.services.js"></script>
+    <script src="services/productos.services.js"></script>
+    <script src="services/usuarios.services.js"></script>
+    <!-- Componentes -->
+    <script src="components/compras.components.js"></script>
+    <script src="components/productos.components.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

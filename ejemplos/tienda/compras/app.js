@@ -1,9 +1,11 @@
-const API   = 'https://crudcrud.com/api/fa9f30a41dc04788a4fa95fec1d16eca'
+const API   = 'https://crudcrud.com/api/4bca551ed109407fbac15f297b3b7cae'
 const RAND_SIZE = 1000000000
 const app = new Vue({
     el: '#app',
     data: {
         compras: [],
+        usuarios: [],
+        productos: [],
         form: {
             _id: null, 
             producto: null,
@@ -24,10 +26,21 @@ const app = new Vue({
             }
         },
         obtenerTodos: function (){
+            // Listado de compras
             Compras.todos( res => {
                 this.compras = res
                 this.initForm()
                 this.totalizar()
+            })
+
+            // Listado de productos
+            Productos.todos( res => {
+                this.productos = res
+            })
+
+            // Listado de usuarios
+            Usuarios.todos( res => {
+                this.usuarios = res
             })
         },
         guardar: function (){

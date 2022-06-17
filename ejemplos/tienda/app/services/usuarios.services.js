@@ -1,5 +1,5 @@
-const Compras = {
-    model: '/compras',
+const Usuarios = {
+    model: '/usuarios',
     todos: function (cb){
         const url = API + this.model
         axios.get(url).then( response => {

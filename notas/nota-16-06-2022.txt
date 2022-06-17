@@ -1,0 +1,38 @@
+- CRUD de Compras
+    -> GET de /productos
+        -> Cargamos ese listado en un select
+    -> GET de /usuarios
+        -> Cargamos ese listado en un select
+
+    -> POST /compras
+        -> {
+            producto: {},
+            usuario: {},
+            ...
+        }
+
+    Aplicacion de tipo SPA
+        -> Single page application
+            -> Props
+                -> App que esta orientada a estados
+                -> Se concentra todo en el index.html
+                -> No tiene reload
+                    -> toda la informacion se carga via AJAX
+
+        Arq. de FrontEnd
+
+            -> tienda
+                -> app
+                    -> index.html
+                    -> app.js
+                    -> components
+                        <model>.componets.js (comp. estaticos)
+                    -> services
+                        <model>.components.js
+
+            Estado:
+                -> url, componente
+                -> url: /usuarios
+                    -> componente: usuarios
+                        -> util. logica de negocio de servicio usuario
+                

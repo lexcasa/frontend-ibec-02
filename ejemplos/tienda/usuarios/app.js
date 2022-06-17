@@ -1,4 +1,4 @@
-const API   = 'https://crudcrud.com/api/fa9f30a41dc04788a4fa95fec1d16eca'
+const API   = 'https://crudcrud.com/api/4bca551ed109407fbac15f297b3b7cae'
 const RAND_SIZE = 1000000000
 const app = new Vue({
     el: '#app',
