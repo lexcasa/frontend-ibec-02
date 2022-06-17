@@ -35,4 +35,8 @@
                 -> url: /usuarios
                     -> componente: usuarios
                         -> util. logica de negocio de servicio usuario
-                
+    
+    EJERCICIO RAPIDO #1: 
+        -> Hacer andar la app con ruteo local
+        -> Agregar el componente Usuarios al estado /usuarios
+        -> Crear un componente para listar el menu de forma dinamica
