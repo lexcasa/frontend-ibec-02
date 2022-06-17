@@ -39,4 +39,6 @@
     EJERCICIO RAPIDO #1: 
         -> Hacer andar la app con ruteo local
         -> Agregar el componente Usuarios al estado /usuarios
+            -> const UsuariosState = UsuariosComp
+            -> {path:'/usuarios', component: UsuariosState}
         -> Crear un componente para listar el menu de forma dinamica

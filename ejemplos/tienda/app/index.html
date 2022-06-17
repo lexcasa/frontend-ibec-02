@@ -12,9 +12,7 @@
 <body>
     <div id="app">
         <h1>{{mensaje}}</h1>
-        <router-link to="/">Home</router-link>
-        <router-link to="/compras">Compras</router-link>
-        <router-link to="/productos">Productos</router-link>
+        <menu-component></menu-component>
         <router-view></router-view>
     </div>
     <!-- Servicios -->
@@ -24,6 +22,8 @@
     <!-- Componentes -->
     <script src="components/compras.components.js"></script>
     <script src="components/productos.components.js"></script>
+    <script src="components/usuarios.components.js"></script>
+    <script src="components/menu.components.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
